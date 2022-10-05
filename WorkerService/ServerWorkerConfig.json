@@ -1,0 +1,54 @@
+{
+	"Application": {
+		"Name": "",
+		"Version": "",
+		"WorkerConfig": {
+			"WorkerName": "",
+			"WorkerPath": "",
+			"WorkerArgs": [
+				"arg1",
+				"arg2"
+			]
+		},
+		"GlobalWritingConfig": {
+			"TextLines": [
+				"1 xproduct text1",
+				"2 hiring intern",
+				"3 using worker and server process",
+				"3 hiring intern"
+			],
+			"Delay": "5s"
+		},
+		"Workers": [{
+				"Name": "worker-1",
+				"InternalTextLines": [
+					"internal --- text 1",
+					"internal --- text 2",
+					"internal --- text 3",
+					"internal --- text 4"
+				],
+				"WritingFilePath": "d:/samplefile.txt"
+			},
+			{
+				"Name": "worker-2",
+				"InternalTextLines": [
+					"internal --- text 3",
+					"internal --- text 5",
+					"internal --- text 7",
+					"internal --- text 8"
+				],
+				"WritingFilePath": "d:/samplefile.txt"
+			},
+			{
+				"Name": "worker-3",
+				"InternalTextLines": [
+					"internal --- text 100",
+					"internal --- text 5",
+					"internal --- text 7",
+					"internal --- text 8"
+				],
+				"WritingFilePath": "d:/samplefile-2.txt"
+			}
+		]
+	}
+}
